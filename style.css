@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background:url("clock1.png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+h1{
+     position:absolute;
+     top:7%;
+     left:12%;
+     font-size: 50px;
+     font-family: 'Laila', sans-serif;
+}
+.container{
+    position: absolute;
+    top:20%;
+    left:5%;
+    min-width:450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+.container button{
+    float:right;
+    padding: 8px;
+}
+.container button:active{
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+} 
+
+.container input{
+    padding: 8px;   
+}
+.container input:hover{
+    background-color:aliceblue;
+}
+#new-task{
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#info{
+    width:75%;
+    padding-left: 5px;
+    border:2px solid #666561;
+    border-radius: 5px;
+    font-weight: 300;
+    outline:none;}
+#info:focus{
+    outline: none;
+    border-color: #face0c;
+    transition: 1s;
+}
+#add{
+    border:2px solid #666561;
+    border-radius: 5px;
+    outline: none;
+    padding:10px;
+    margin-right: -15px;
+    background-color: #915ef7;
+    color: white;
+}
+#task-list{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    min-width: 450px;
+}
+.task{
+    display: flex;
+    border-radius: 5px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #face0c;
+    margin-left: 20px;
+    height: 35px;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+.task:hover{
+    background-color: #999;
+    border: 2px solid #face0c;
+}
+.checked{
+    text-decoration: line-through;
+}
+.del{
+    color:black;
+    outline: none;
+    background-color:white;
+    font-size: 15px;
+    border: none;
+}
+.del:hover{
+    background-color: #999;
+}
